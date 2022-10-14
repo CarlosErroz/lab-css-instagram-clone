@@ -8,19 +8,66 @@ body {
   font: 200 16px/1.5 "Helvetica Neue", Helvetica, Arial, sans-serif;
   margin: 0;
   background-image: url(../images/bgtile.png);
-  width: 100%;
-  height: 100%;
+  background-repeat:no-repeat;
+  background-size: 100% 30%;
+  display:flex;
+  flex-direction:column;
+  justify-content: center;
 }
-.imagenPhones {
-  width:100%;
-  height:100%;
+.home {
+  display:flex;
+  flex-direction:row;
+  justify-content:center;
+  margin-top: 50px;
+}
+.homeDerecha {
+  margin-left:20px;
+}
+.homeDerechaSuperior {
+  display:flex;
+  flex-direction:row;
+  justify-content:space-between;
+  align-items:center;
+}
+button {
+  width:100px;
+  height:40px;
+  border: 1px solid #06365f;
+  background-color: #347ab3;
+  color:white;
+  font-weight:bold;
+  display:flex;
+  justify-content:space-around;
+  align-items:center;
 }
 .homeDerechaMedia {
-  background-image:url(images/frame.png);
+  background-image:url(../images/frame.png);
   background-repeat: no-repeat;
+  width: 450px;
+  padding:20px;
+  color:#06365f;
 }
+.homeDerechaInferior img {
+  margin-left:20px;
+}
+
 .footer {
   display:flex;
   justify-content:space-evenly;
   align-items:baseline;
+  text-transform:uppercase;
+  list-style-type: none;
+  font-family: Arial, Helvetica, sans-serif;
+  letter-spacing: 0.5px;
+  font-size:12px;
+  margin:20px 300px;
+}
+.footer a {
+  color:#06365f;
+  text-decoration:none;
+  font-weight: bold;
+
+}
+.footer p {
+  color:#1c5380;
 }
